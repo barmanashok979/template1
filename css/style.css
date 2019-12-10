@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #28282e;
+}
+.header {
+	width: 100%;
+	position: relative;
+	background: #000000c9;
+	height: auto;
+}
+
+.header-bg {
+	background-image: url('../images/header-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	background: #000000b2;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 60%;
+	margin: 0;
+	padding: 0;
+}
+
+
+.nav-list li {
+	list-style: none;
+}
+.nav-list li a {
+	font-size: 16px;
+	color: beige;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.nav-list li a:hover {
+	color: brown;
+}
+
+.logo h2 a  {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(158, 158, 17);
+	
+}
+.logo h2 a:hover {
+	color: coral;
+}
+.toggle {
+	display: none;
+}
+.toggle div {
+	width: 50px;
+	height: 5px;
+	margin: 5px;
+	background: rgb(163, 163, 3);
+	border-radius: 10px;
+}
+
+.header-img > img{
+	width: 100%;
+	height: 550px;
+	border-radius: 50%;
+}
+
+.header-text {
+	text-align: center;
+}
+.header-text h2{
+	font-size: 50px;
+	text-align: center;
+	color: yellow;
+}
+.header-text p{
+	font-size: 24px;
+	text-align: center;
+	color: white;
+}
+
+.header-content {
+	padding: 60px;
+	margin-top: 80px;
+}
+.header-text {
+	padding: 30px;
+}
+
+/** about section **/
+.about-section {
+	width: 100%;
+	height: auto;
+	padding: 50px;
+}
+
+.about-image img{
+	width: 100%;
+	height: 100%;
+}
+
+.about-text {
+	text-align: left;
+	color: #fff;
+	font-weight: bold;
+}
+.about-text h2{
+	font-size: 48px;
+}
+
+
+/** food quality **/
+.food-quality {
+	padding: 50px;
+	width: 100%;
+	height: 100%;
+}
+.food-quality-text {
+   text-align: right;
+   color: white;
+   font-weight: bold;
+   padding: 10px;
+} 
+.food-quality-text h2{
+  font-size: 48px;
+} 
+
+
+.food-quality-image > img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/** foot menu**/
+.menu-section  {
+	padding: 50px;
+}
+.menu-section h1 {
+	text-align: center;
+	color: coral;
+	font-size: 50px;
+	padding: 20px;
+	margin-bottom: 40px;
+
+}
+.menu-box {
+	padding: 20px;
+	box-shadow: 2px 0px 8px black;
+	margin-bottom: 30px;
+	transition: .5s;
+}
+
+.menu-box:hover {
+	transform: scale(1.03);
+}
+.menu-box img {
+	width: 100%;
+	height: 100%;
+}
+.menu-box h3 {
+	text-align: left;
+	font-size: 45px;
+	color: yellow;
+}
+.menu-box p {
+	text-align: left !important;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 16px;
+}
+.menu-box span {
+	text-align: center;
+	color: rgb(211, 207, 0);
+	text-align: center;
+	font-size: 38px;
+}
+
+
+footer {
+	padding: 30px;
+	background: rgb(8, 2, 2);
+	text-align: center;
+	color: cornsilk;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px){
+	body {
+		overflow-x:hidden ;
+	}
+	.toggle {
+		display: block;
+	}
+	.nav-list {
+		flex-direction: column;
+		width: 100%;
+		min-height: 500px;
+		position: absolute;
+		top: 80px;
+		background: #000000b2;
+		transform: translate(100%);
+		
+	}
+	.toogle-active {
+		transform: translate(0%);
+		transition: 1s;
+	}
+	
+}
+
+/*** thank you for watching the video **/
